@@ -4,6 +4,7 @@ import {
   LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer,
 } from "recharts";
 import "./index.css";
+import Processes from "./Processes";
 
 const WARN = { cpu: 85, mem: 85, disk: 85 };
 const CRIT = { cpu: 95, mem: 92, disk: 92 };
@@ -85,6 +86,11 @@ export default function App() {
           </Section>
           <Section title="Disk % (son ~2 dk)">
             <Chart data={series} k="disk" />
+          </Section>
+
+          {/* PROCESSES BÖLÜMÜ BURADA OLACAK */}
+          <Section title="Processes">
+            <Processes />
           </Section>
 
           <div className="footer">
