@@ -1,12 +1,20 @@
-🚀 Project Description
+# System Health Dashboard
 
-System Health Dashboard provides a way to monitor system performance in real time.
-It includes:
+A real-time system monitor and process manager built with **Flask** and **React**.  
+Basically, a clean, browser-based Task Manager.
 
-✨ A Python monitoring agent that collects metrics from the system.
+---
 
-✨ A FastAPI backend that receives and broadcasts data.
+## Features
+- Live CPU, Memory, and Disk usage (auto-refresh every 2s)  
+- Grouped process list (e.g. multiple Spotify.exe under one row)  
+- Expand to see child processes  
+- Kill any process directly from the dashboard  
+- Click column headers to sort ascending/descending  
+- Dark, minimal interface
 
-✨ A React frontend that visualizes the data through charts and tables.
+---
 
-✨ Perfect for learning system monitoring, backend APIs, and WebSocket communication.
+## Stack
+**Backend:** Flask, psutil, CORS, dotenv  
+**Frontend:** React (Vite), Recharts
